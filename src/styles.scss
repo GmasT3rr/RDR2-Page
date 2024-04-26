@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+
+html{
+    scroll-behavior: smooth;
+
+}
+
+body{
+    overflow-x: hidden;
+    // background: url(./assets/content-background.jpg);
+    background-color: #000;
+    margin: 0;
+    font-family: 'RDR';
+}
+
+@font-face {
+    font-family: 'RDR';
+    src: url('./assets/fonts/chinese-rocks.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'text';
+    src: url('./assets/fonts/HapnaSlabSerif-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// @TODO{
+//     Responsive a partir de 1024 para abajo
+// }

@@ -1,0 +1,25 @@
+<nav class="navbar" [ngClass]="{ collapsed: isCollapsed }">
+  <div class="logo">
+    <object data="../../../assets/svgs/logo.svg" type=""></object>
+    <div class="collapse-toggle" (click)="toggleCollapse()">
+      <fa-icon  [icon]="faBars"></fa-icon>
+    </div>
+    <div class="collpased-icons">
+      <fa-icon class="nav-search" [icon]="faSearch"></fa-icon>
+      <fa-icon class="nav-user" [icon]="faUser"></fa-icon>
+    </div>
+  </div>
+  <ul class="nav-links">
+    <li class="underline"><a href="#about">Overview</a></li>
+    <!-- <li class="underline"><a href="#bestGame" >Why this is the best game?</a></li> -->
+    <li class="underline"><a href="#top3">Top 3 gang members</a></li>
+    <li class="underline">
+      <a href="#whyBuy">Why should you buy the game?</a>
+    </li>
+    <!-- <li class="underline"><a href="#">Mundo abierto</a></li> -->
+
+    <li><a href="#" class="buy-btn">BUY NOW</a></li>
+    <li class="icon search"><fa-icon [icon]="faSearch"></fa-icon></li>
+    <li class="icon user"><fa-icon [icon]="faUser"></fa-icon></li>
+  </ul>
+</nav>

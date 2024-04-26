@@ -1,0 +1,65 @@
+
+.character-container{
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view(0px);
+    animation-range-start: cover;
+    animation-range-end: contain;
+    .name{
+        text-align: center;
+        font-size: 40px;
+        color: #fff;
+        width: 100%;
+    }
+    .content{
+        padding: 30px 0 30px 0;
+         background: url(../../../assets/images/content-background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin-bottom: 100px;
+        flex-wrap: wrap;
+
+        .image-container{
+            display: flex;
+            justify-content: flex-end;
+            width: auto;
+            img{
+                height: 500px;
+            }
+        }
+        .text{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            text-align: center;
+            align-self: stretch;
+            width: 30%;
+            padding: 50px;
+            font-size: 20px;
+            line-height: 1.5;
+            color: #fff;
+            font-family: 'text';
+    
+        }
+    }
+
+}
+
+.arthur .content{
+    flex-direction: row-reverse;
+} 
+.marston .content{
+    flex-direction: row;
+} 
+.dutch .content{
+    flex-direction: row-reverse;
+} 
+
+@keyframes fade-in{
+    25%{scale: .8; opacity: 0;}
+    85%,100%{scale: 1; opacity: 1;}
+}

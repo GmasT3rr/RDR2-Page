@@ -1,0 +1,130 @@
+<div class="scroll-watcher"></div>
+<app-nav></app-nav>
+<section class="main">
+  <header>
+    <img src="../assets/images/top-banner.jpg" alt="" />
+  </header>
+  <section id="about">
+    <div class="description">
+      <h1 class="title">About the game</h1>
+      <div class="text-container">
+        <p>
+          America, 1899. The end of the Wild West era has begun. After a robbery
+          goes badly wrong in the western town of Blackwater, Arthur Morgan and
+          the Van der Linde gang are forced to flee. With federal agents and the
+          best bounty hunters in the nation massing on their heels, the gang
+          must rob, steal and fight their way across the rugged heartland of
+          America in order to survive. As deepening internal divisions threaten
+          to tear the gang apart, Arthur must make a choice between his own
+          ideals and loyalty to the gang who raised him.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="bestGame">
+    <!-- <h1 class="title">Why this is the best game?</h1> -->
+    <div class="items-container">
+      <ng-container *ngFor="let item of itemList">
+        <app-item [title]="item.title" [imageSrc]="item.imageSrc"></app-item>
+      </ng-container>
+    </div>
+  </section>
+
+  <section id="top3">
+    <h1 class="title">Top 3 gang members</h1>
+    <ng-container *ngFor="let member of gangMembers">
+      <app-gang-member
+        [name]="member.name"
+        [class]="member.class"
+        [description]="member.description"
+        [imageSrc]="member.imageSrc"
+      ></app-gang-member>
+    </ng-container>
+  </section>
+
+  <section id="whyBuy">
+    <h1 class="title">Why should you buy the game?</h1>
+    <div class="img-container">
+      <img src="../assets/images/riders-moon.jpg" alt="" />
+      <div class="text">
+        <p>
+          You will experience the wild west like never before in Red Dead
+          Redemption 2. With stunning visuals, captivating storytelling, and
+          rich gameplay, it's an unforgettable journey through untamed
+          landscapes and epic adventures.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="Outlaws">
+    <h1>OUTLAWS FOR LIFE</h1>
+  </section>
+
+  <footer id="ESRB">
+    <div class="outNow">
+      <p>Out now</p>
+    </div>
+    <div class="esrb-container">
+      <object data="../assets/svgs/ESRB.svg" type=""></object>
+      <div class="text-container">
+        <p>
+          Blood and Gore, Intense Violence, Nudity, Sexual Content, Strong
+          Language, Use of Drugs and Alcohol
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <footer id="info">
+    <div class="list first">
+      <div class="items">
+        <a href="">Contact</a>
+        <a class="careers" href=""
+          >Careers <fa-icon [icon]="faArrowUpRightFromSquare"></fa-icon
+        ></a>
+        <a href="">Comunity Guidelines</a>
+        <a href="">Subscribe</a>
+      </div>
+      <button>
+        <fa-icon class="globe" [icon]="faGlobe"></fa-icon> Select a Lenguage
+        <fa-icon class="chevron" [icon]="faChevronDown"></fa-icon>
+      </button>
+    </div>
+    <div class="list second">
+      <div class="items">
+        <a href="">Corporate</a>
+        <a href="">Privacy</a>
+        <a href="">Cookie Settings</a>
+        <a href="">Cookie Privacy</a>
+        <a href="">Legal</a>
+        <a href="">Do Not Sell My Personal Information</a>
+      </div>
+      <div class="icons">
+        <a href=""><fa-icon [icon]="faXTwitter"></fa-icon></a>
+        <a href=""><fa-icon [icon]="faInstagram"></fa-icon></a>
+        <a href=""><fa-icon [icon]="faYoutube"></fa-icon></a>
+        <a href=""><fa-icon [icon]="faFacebook"></fa-icon></a>
+        <a href=""><fa-icon [icon]="faTwitch"></fa-icon></a>
+      </div>
+    </div>
+    <div class="list third">
+      <div class="items">
+        <a class="left" href="">Rockstar Games</a>
+        <a href="">New York</a>
+        <a href="">London</a>
+      </div>
+      <div class="items">
+        <a href="">Paris</a>
+        <a href="">Bogotá</a>
+        <i
+          style="background-color: red; color: white"
+          class="fas fa-camera"
+        ></i>
+
+        <a class="right" href="">MCMXCVIII</a>
+      </div>
+    </div>
+  </footer>
+</section>
