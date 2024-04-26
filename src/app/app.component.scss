@@ -224,7 +224,7 @@ section {
     .items {
       display: flex;
       flex-direction: row;
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
       font-size: 15px;
       align-items: start;
       a {
@@ -381,6 +381,14 @@ section {
   .description {
     margin-top: -150px;
   }
+  .list.second{
+    margin: 2rem 0;
+    .icons{
+      direction: rtl;
+      grid-template-columns: repeat(3, 1fr) !important;
+    }
+  }
+
   #whyBuy {
     .img-container {
       img {
@@ -406,6 +414,16 @@ section {
   }
   .items-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .list.second{
+    margin: 2rem 0;
+    .icons{
+      direction: rtl;
+      grid-template-columns: repeat(2, 1fr) !important;
+    }
+  }
+  .list.third {
+    padding: 1rem 0 1rem 0;
   }
   #whyBuy {
     .img-container {
