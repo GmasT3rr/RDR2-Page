@@ -211,6 +211,22 @@
 
 }
 
+@media (max-width:500px) {
+  .logo {
+    object {
+      max-width: 15rem;
+    }
+  }
+}
+@media (max-width:375px) {
+  .logo {
+ 
+    object {
+      max-width: 10rem;
+    }
+  }
+}
+
 @keyframes collapse-toggle-anim {
   0% {
     transform: translateY(-100%);
