@@ -14,7 +14,12 @@
 }
 // red
 // #cc0000
-
+.main {
+  position: relative;
+  h1 {
+    text-align: center;
+  }
+}
 header {
   display: flex;
   justify-content: center;
@@ -41,7 +46,7 @@ section {
   align-items: center;
   flex-direction: column;
   .title {
-    font-size: 60px;
+    font-size: 3.75rem;
     color: #fff;
   }
 }
@@ -59,7 +64,7 @@ section {
     p {
       margin: auto;
       width: 50%;
-      font-size: 22px;
+      font-size: 1.375rem;
       font-family: "text";
     }
   }
@@ -88,7 +93,7 @@ section {
     margin: 0;
     padding: 110px 0px 60px 0px;
     text-align: center;
-    font-size: 110px;
+    font-size: 6.875rem;
   }
   &::before {
     content: "";
@@ -120,7 +125,7 @@ section {
     p {
       font-weight: bold;
       color: #fff;
-      font-size: 50px;
+      font-size: 3.125rem;
       margin: 40px 0 20px 0;
     }
   }
@@ -146,7 +151,7 @@ section {
         height: 50px;
         text-align: left;
         color: #fff;
-        font-size: 10px;
+        font-size: 0.625rem;
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         line-height: 1.25;
       }
@@ -191,13 +196,13 @@ section {
       display: flex;
       fa-icon {
         color: #fff;
-        font-size: 12px;
+        font-size: .75rem;
         padding-left: 8px;
         align-self: flex-start;
       }
     }
     a {
-      font-size: 20px;
+      font-size: 1.25rem;
       &:hover {
         color: #fcaf17;
       }
@@ -205,7 +210,7 @@ section {
     button {
       display: flex;
       flex-direction: row;
-      font-size: 15px;
+      font-size: .9rem;
       padding: 10px;
       border: none;
       grid-gap: 10px;
@@ -214,7 +219,7 @@ section {
       font-weight: bold;
       cursor: pointer;
       .globe {
-        font-size: 18px;
+        font-size: 1.125rem;
       }
 
       .chevron {
@@ -226,7 +231,7 @@ section {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      font-size: 15px;
+      font-size: .9rem;
       align-items: start;
       a {
         opacity: 0.65;
@@ -245,7 +250,7 @@ section {
       fa-icon {
         display: flex;
         color: #fff;
-        font-size: 20px;
+        font-size: 1.25rem;
         width: 35px !important;
         height: 35px !important;
         padding: 5px;
@@ -263,7 +268,7 @@ section {
     }
   }
   .list.third {
-    font-size: 15px;
+    font-size: .9rem;
     font-weight: bold;
     grid-gap: 25px;
     .items a {
@@ -330,7 +335,7 @@ section {
       width: 30%;
       margin: auto;
       font-family: "text";
-      font-size: 28px;
+      font-size: 1.75rem;
       color: #fff;
     }
   }
@@ -374,7 +379,7 @@ section {
 }
 
 @media only screen and (max-width: 1440px) {
-  .description{
+  .description {
     margin-top: -14rem;
   }
 }
@@ -388,9 +393,9 @@ section {
   .description {
     margin-top: -22rem;
   }
-  .list.second{
+  .list.second {
     margin: 2rem 0;
-    .icons{
+    .icons {
       direction: rtl;
       grid-template-columns: repeat(3, 1fr) !important;
     }
@@ -404,17 +409,16 @@ section {
       .text {
         p {
           width: 80%;
-          font-size: 24px;
+          font-size: 1.5rem;
         }
       }
     }
   }
 }
 @media only screen and (max-width: 768px) {
-
   .description {
     margin-top: -30rem;
-    p{
+    p {
       width: 90% !important;
     }
   }
@@ -422,36 +426,37 @@ section {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 0px !important;
     margin-top: 2rem;
-    app-item::ng-deep{
-      width: 100% !important;
+    app-item::ng-deep {
+      width: 90%;
       flex-direction: column;
-      .item{
+      justify-content: center;
+      margin: auto;
+      .item {
         margin-bottom: 5rem;
-        .image-container{
-          .main-image{
-            height: 20rem !important;
+        .image-container {
+          .main-image {
+            height: 18rem !important;
           }
-          .borders{
-            height: 20rem !important;
-  
+          .borders {
+            height: 18.5rem !important;
           }
         }
-        p{
-          width: fit-content;
+        p {
+          width: 100%;
         }
       }
     }
   }
-  #top3{
-    app-gang-member::ng-deep{
-      .content{
+  #top3 {
+    app-gang-member::ng-deep {
+      .content {
         flex-direction: column !important;
         padding: 0;
         margin-bottom: 3rem;
-        .image-container{
+        .image-container {
           order: 1;
         }
-        .text{
+        .text {
           order: 2;
           width: 90%;
           padding: 0;
@@ -461,11 +466,11 @@ section {
       }
     }
   }
-  .list.second{
+  .list.second {
     margin: 2rem 0;
-    .icons{
+    .icons {
       direction: rtl;
-      grid-template-columns: repeat(2, 1fr) !important;
+      grid-template-columns: repeat(3, 1fr) !important;
     }
   }
   .list.third {
@@ -480,7 +485,139 @@ section {
         p {
           margin-top: 6rem;
           width: 90%;
-          font-size: 18px;
+          font-size: 1.125rem;
+        }
+      }
+    }
+  }
+  #info {
+    width: 95%;
+    .list.first {
+      .items {
+        flex-basis: 100%;
+        grid-gap: 1rem;
+        a {
+          font-size: 1rem !important;
+        }
+      }
+      button {
+        align-items: center;
+      }
+    }
+    .list.second {
+      .items {
+        flex-wrap: wrap;
+        width: 100%;
+      }
+    }
+    .list.third {
+      flex-direction: column;
+      .items.l {
+        .left {
+          margin: 0;
+        }
+      }
+      .items.r {
+        .right {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 650px) {
+  .items-container {
+    app-item::ng-deep {
+      .item {
+        .image-container {
+          .main-image {
+            height: 16rem !important;
+          }
+          .borders {
+            height: 16.5rem !important;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .description{
+    margin-top: -38rem;
+  }
+  .items-container {
+    grid-template-columns: repeat(1, 1fr);
+    app-item::ng-deep {
+      flex-direction: column !important;
+    }
+  }
+  #top3 {
+    app-gang-member::ng-deep {
+      .content {
+        .image-container {
+          img {
+            max-height: 20rem;
+          }
+        }
+      }
+    }
+  }
+  #Outlaws {
+    h1 {
+      font-size: 4rem;
+    }
+  }
+  #whyBuy {
+    .img-container {
+      &::after {
+        content: none;
+      }
+      img {
+        padding: 4rem 0 2rem 0;
+      }
+      .text {
+        p {
+          margin-top: 12rem;
+          width: 90%;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  #info {
+    .list.first {
+      flex-direction: column;
+      .items {
+        justify-content: center;
+      }
+      button {
+        margin-top: 1rem;
+      }
+    }
+    .list.second {
+      flex-direction: column;
+
+      .items {
+        margin: 0;
+        text-align: center;
+        grid-gap: 1rem;
+        justify-content: center;
+      }
+      .icons {
+        margin-top: 1rem;
+        grid-template-columns: repeat(5, 1fr) !important;
+      }
+    }
+    .list.third {
+      flex-direction: column;
+      .items.l {
+        .left {
+          margin: 0;
+        }
+      }
+      .items.r {
+        .right {
+          margin: 0;
         }
       }
     }
