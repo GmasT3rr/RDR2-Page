@@ -10,6 +10,7 @@
   background-color: #cc0000;
   transform-origin: left;
   width: 100%;
+  overflow-x: hidden;
 }
 // red
 // #cc0000
@@ -372,14 +373,20 @@ section {
   }
 }
 
+@media only screen and (max-width: 1440px) {
+  .description{
+    margin-top: -14rem;
+  }
+}
 @media only screen and (max-width: 1024px) {
   header {
     img {
+      animation: none !important;
       margin-top: 70px;
     }
   }
   .description {
-    margin-top: -150px;
+    margin-top: -22rem;
   }
   .list.second{
     margin: 2rem 0;
