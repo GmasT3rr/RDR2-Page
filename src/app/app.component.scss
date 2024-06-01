@@ -24,10 +24,11 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  // height: 100vh;
+  min-height: 50rem;
   img {
     width: 100%;
-    margin-top: 90px;
+    // margin-top: 90px;
     height: auto;
     position: absolute;
     object-fit: cover;
@@ -387,7 +388,7 @@ section {
   header {
     img {
       animation: none !important;
-      margin-top: 70px;
+      // margin-top: 70px;
     }
   }
   .description {
